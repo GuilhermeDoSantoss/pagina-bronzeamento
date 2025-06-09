@@ -34,7 +34,7 @@ CSS3
 
 JavaScript Puro (Vanilla JS)
 
-##🚀 Como Usar
+## 🚀 Como Usar
 
 Clone este repositório:
 
