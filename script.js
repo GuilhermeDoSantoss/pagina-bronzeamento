@@ -193,11 +193,8 @@ function startMainContentAnimations() {
     })
 
     // Mapear serviços
-    const serviceNames = {
-      bronzeamento: "Bronzeamento 1h - 35$",
-      turbo: "Bronzeamento Turbo 1:30hrs - 45$",
-      neon: "Bronzeamento Neon 2hrs - 50R$",
-    }
+    const services = Array.from(document.querySelectorAll('input[name="service[]"]:checked'))
+            .map(checkbox => checkbox.nextElementSibling.textContent);
 
     const message = `*AGENDAMENTO DO BRONZEAMENTO*
 
@@ -208,7 +205,7 @@ Olá! Tudo bem!? Gostaria de agendar um horário.
 • WhatsApp: ${phone}
 
 *SERVIÇO DESEJADO:*
-• Tipo: ${serviceNames[service] || service}
+• Tipo: ${services.join(', ' )}
 
 *DATA E HORÁRIO:*
 • Data: ${formattedDate}
