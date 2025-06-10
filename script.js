@@ -194,9 +194,9 @@ function startMainContentAnimations() {
 
     // Mapear serviços
     const serviceNames = {
-      delicada: "Bronzeamento Delicada",
-      neon: "Bronzeamento Neon",
-      retoque: "Retoque",
+      bronzeamento: "Bronzeamento 1h - 35$",
+      turbo: "Bronzeamento Turbo 1:30hrs - 45$",
+      neon: "Bronzeamento Neon 2hrs - 50R$",
     }
 
     const message = `*AGENDAMENTO DO BRONZEAMENTO*
